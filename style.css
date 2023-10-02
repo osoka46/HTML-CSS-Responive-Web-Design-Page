@@ -55,9 +55,55 @@ body{
     padding: 10px;
     transition: 0.5s;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .menu a:hover{
     background-color:#ede5e5;
     color: black;
+}
+
+.main{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(./images/galeri.jpg);
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center; 
+    align-items: center;
+}
+
+.main h4{
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+} 
+
+.main .button{
+    padding-top: 30px;
+
+    
+}
+.main .button a{
+    text-decoration: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255,0.3);
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 1px solid white;
+    text-transform: capitalize;
+    transition: ease-in-out 0.5s;
+}
+
+.button a:hover{
+    background-color:#ede5e5;
+    color: black;
+    padding: 10px;
 }
