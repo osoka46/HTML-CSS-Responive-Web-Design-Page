@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -9,15 +10,18 @@ body{
     width: 100%;
     background-position: center;
     background-size: cover;
-    overflow-x: hidden;
+    background-color: red;
+
+
 }
 
 .container{
     width: 100vw;
-    height: 100vh;
-    background-color: red;
+    height: 100%;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .menu-bar{
@@ -66,14 +70,15 @@ body{
 .main{
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(./images/galeri.jpg);
     width: 100%;
-    height: 50vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
     display: flex;
+    background-position: center;
+    background-size: cover;
+    padding: 200px;
     flex-flow: column wrap;
     justify-content: center; 
     align-items: center;
+
 }
 
 .main h4{
@@ -82,12 +87,16 @@ body{
     color: white;
     padding-bottom: 20px;
     border-bottom: 1px solid white;
+
+
+
 } 
 
 .main .button{
     padding-top: 30px;
 
-    
+
+
 }
 .main .button a{
     text-decoration: none;
@@ -106,4 +115,88 @@ body{
     background-color:#ede5e5;
     color: black;
     padding: 10px;
+}
+.orta_alan{
+    display: flex;
+    justify-content: space-around;
+    width: 95vw;
+}
+
+.orta{
+    width: 22%;
+    border: 2px solid gray;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin: 2% 0;
+    background:linear-gradient(rgba(52,64,98,0.8),rgba(52,64,98,0.5));
+}
+.icerik{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: verdana;
+    text-align: justify;
+    padding: 10px;
+}
+.icerik img{
+    width: 50%;
+}
+.icerik p{
+    text-indent: 15px;
+    padding: 20px;
+}
+.alt_alan{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 40vh;
+    background-color: #171717;
+    color: white;
+}
+
+.alt_alan .icerik{
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.alt_alan .sosyal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 40px;
+    border: 1px solid white;
+}
+.alt_alan .sosyal i{
+    padding: 5px;
+    margin: 30px;
+
+    cursor: pointer;
+    border-radius: 3px;
+    
+}
+
+.alt_alan .sosyal .a{
+    color: white;
+}
+
+.sosyal i:nth-child(1):hover{
+    background-color: blue;
+}
+.sosyal i:nth-child(2):hover{
+    color: aqua;
+}
+.sosyal i:nth-child(3):hover{
+    color: #E1595B;
+}
+.sosyal i:nth-child(4):hover{
+    color: #D8090D;
+}
+.sosyal i:nth-child(5):hover{
+    color: #26E03B;
 }
