@@ -1,202 +1,93 @@
-
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: 0; 
     padding: 0;
-}
-html,
-body{
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-color: red;
-
 
 }
-
-.container{
-    width: 100vw;
-    height: 100%;
+.header{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.menu-bar{
-    background-color: #073f68;
-    display: flex;
-    flex-flow: row wrap;
+    background: #073f68;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 80px;
     margin-top: 20px;
 }
-.logo{
-    margin-top: -20px;
-}
-.logo img{
-    height: 100px;
-}
-
-
-.menu ul li{
-    padding: 5px;
-    margin: 5px;
+.nav-links ul{
+    display: flex;
+    flex-direction: row ;
     list-style-type: none;
-    display: inline-block;
+    justify-content: space-around;
+    margin: 5px;
+    padding: 5px;
+    width: 30vw;
 }
 
-.menu a{
+.nav-links ul a{
     color: #fff;
-    text-decoration: none;
-    text-transform:capitalize;
+    text-decoration: none;  
+    text-transform: capitalize;
     font-size: 20px;
-    box-sizing: border-box;
     border: 1px solid white;
     padding: 10px;
-    transition: 0.5s;
-    border-radius: 10px;
     cursor: pointer;
-}
-
-.menu a:hover{
-    background-color:#ede5e5;
-    color: black;
-}
-
-.main{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(./images/galeri.jpg);
-    width: 100%;
-
-    display: flex;
-    background-position: center;
-    background-size: cover;
-    padding: 200px;
-    flex-flow: column wrap;
-    justify-content: center; 
-    align-items: center;
-
-}
-
-.main h4{
-    text-transform: uppercase;
-    font-size: 30px;
-    color: white;
-    padding-bottom: 20px;
-    border-bottom: 1px solid white;
-
-
-
-} 
-
-.main .button{
-    padding-top: 30px;
-
-
-
-}
-.main .button a{
-    text-decoration: none;
-    cursor: pointer;
-    background-color: rgb(255, 255, 255,0.3);
-    color: #fff;
-    box-sizing: border-box;
-    font-size: 20px;
-    padding: 10px 30px;
-    border: 1px solid white;
-    text-transform: capitalize;
     transition: ease-in-out 0.5s;
 }
 
-.button a:hover{
-    background-color:#ede5e5;
+.nav-links ul a:hover{
+    background-color: #ede5e5;
     color: black;
-    padding: 10px;
+    padding: 12px 16px;
 }
-.orta_alan{
-    display: flex;
-    justify-content: space-around;
-    width: 95vw;
+.header .logo{
+    margin-top: -20px;
+}
+.header img{
+  height: 100px;
 }
 
-.orta{
-    width: 22%;
-    border: 2px solid gray;
-    border-radius: 15px;
-    box-sizing: border-box;
-    margin: 2% 0;
-    background:linear-gradient(rgba(52,64,98,0.8),rgba(52,64,98,0.5));
-}
-.icerik{
+.main .col1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)),url(./images/galeri.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    row-gap: 5px;
+}
+.main .col1 h1{
     color: white;
-    font-family: verdana;
-    text-align: justify;
-    padding: 10px;
-}
-.icerik img{
-    width: 50%;
-}
-.icerik p{
-    text-indent: 15px;
-    padding: 20px;
-}
-.alt_alan{
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    height: 40vh;
-    background-color: #171717;
-    color: white;
-}
-
-.alt_alan .icerik{
-    width: 33%;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: justify;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 15px;
     font-family: 'Courier New', Courier, monospace;
+    justify-self: stretch;
+    border-bottom: 1px solid white;
+    text-align: center;
 }
-
-.alt_alan .sosyal{
+.main .col1 .tutorial-links ul{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 40px;
-    border: 1px solid white;
-}
-.alt_alan .sosyal i{
-    padding: 5px;
-    margin: 30px;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 20px;
 
+}
+.main .col1 .tutorial-links ul a{
+    background-color: rgb(255, 255, 255,0.3);
+    text-decoration: none;
     cursor: pointer;
-    border-radius: 3px;
-    
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px;
+    border: 1px solid white;
+    transition: ease-in-out 0.5s;
 }
-
-.alt_alan .sosyal .a{
-    color: white;
-}
-
-.sosyal i:nth-child(1):hover{
-    background-color: blue;
-}
-.sosyal i:nth-child(2):hover{
-    color: aqua;
-}
-.sosyal i:nth-child(3):hover{
-    color: #E1595B;
-}
-.sosyal i:nth-child(4):hover{
-    color: #D8090D;
-}
-.sosyal i:nth-child(5):hover{
-    color: #26E03B;
+.main .col1 .tutorial-links ul a:hover{
+    padding: 13px 18px;
+    background-color: #ede5e5;
+    color: black;
 }
